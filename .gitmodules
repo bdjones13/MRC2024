@@ -1,0 +1,3 @@
+[submodule "pyDowker"]
+	path = pyDowker
+	url = https://github.com/nihell/pyDowker.git
