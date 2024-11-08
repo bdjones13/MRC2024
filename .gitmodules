@@ -1,3 +1,9 @@
 [submodule "pyDowker"]
 	path = pyDowker
 	url = https://github.com/nihell/pyDowker.git
+[submodule "pyrivet"]
+	path = pyrivet
+	url = https://github.com/rivetTDA/rivet-python.git
+[submodule "rivet"]
+	path = rivet
+	url = https://github.com/rivetTDA/rivet.git
