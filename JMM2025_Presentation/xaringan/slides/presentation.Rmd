@@ -1,0 +1,380 @@
+---
+title: "Dynamics Aware Filtrations - I and II"
+subtitle: "MRC: Climate Science at the Interface <br> Between TDA and Dynamical Systems"
+author: "Fangfei Lan, Tobias Timofeyev, Miguel Lopez, <br> Kristin Kurianski, **Benjamin Jones, Sunia Tanweer**, <br> Christopher Potvin, & Enrique Alvarado<br><br>"
+date: "Joint Mathematics Meetings: January 8, 2025"
+#"`#r Sys.Date()`" (Delete both #)
+output:
+  xaringan::moon_reader:
+    css: ["../../css/msu.css", default-fonts, "../../css/gallery.css"]
+    chakra: '../../js/remark-latest.min.js'
+    lib_dir: libs
+    seal: true
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [top, left, inverse]
+#      countdown: 60000
+    self_contained: false # true for embedding on website
+
+---
+
+<!-- ------------------------------------------------------- -->
+<!-- DO NOT REMOVE -->
+
+```{r setup, include=FALSE}
+library(knitr)
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.align = 'center')
+```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+```{r xaringanExtra-freezeframe, echo=FALSE}
+xaringanExtra::use_freezeframe(
+  selector = ".freeze-gif",
+  trigger = "click",
+  overlay = TRUE,
+  responsive = TRUE
+)
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+<!-- ------------------------------------------------------- -->
+<!-- Adjust collaborator image size and position (DO NOT INSERT ANY CODE ABOVE THIS)-->
+
+# Team
+
+TBA: picture of all people and funding sources
+
+---
+# Motivation
+
+- Atmospheric flows are characterized by chaotic dynamics and recurring large-scale patterns (weather regimes).
+
+- Sea Level Pressure and Geopotential Height are representative fields for the large-scale atmospheric circulation over the North Atlantic and Europe. 
+
+- There are 4 well-known large-scale weather regimes over the North Atlantic: 
+
+- North Atlantic oscillation (NAO): NAO+, NAO-,  Atlantic Ridge and
+the Scandinavian blocking.
+
+---
+# Motivation
+
+![:img 70%, 15%, 17.5%](../figs/motivation_strommen_et_al.png)
+
+.footnote[Strommen, K., Chantry, M., Dorrington, J. et al. A topological perspective on weather regimes. Clim Dyn 60, 1415–1445 (2023). https://doi.org/10.1007/s00382-022-06395-x]
+
+---
+# Distance-Density Bifiltration
+
+![:img 50%, 5%, 20%](../figs/bifiltration.png)
+
+
+<div class="absolute right-2" style="top: 50%; transform: translateY(-50%);">
+  <div class="pa3 bg-light-gray br3 shadow-1">
+  How to encode sequential information?
+  </div>
+</div>
+
+.footnote[Strommen, K., Chantry, M., Dorrington, J. et al. A topological perspective on weather regimes. Clim Dyn 60, 1415–1445 (2023). https://doi.org/10.1007/s00382-022-06395-x]
+
+---
+# Dynamics Aware Topology
+
+- Use TDA to study points clouds sampled from dynamical systems.
+
+- Rips complex on a point cloud doesn’t capture the sequential nature of the system.
+
+- Possibility of 1-cycles with trajectories which aren’t closed/periodic. These “pseudo”-loops can give the false impression of periodicity.
+
+---
+# Lorenz Rips Persistence
+
+![:img 25%, 2%, 35%](../figs/lorenz.png)
+
+![:img 70%, 27%, 25%](../figs/rips_lorenz_barcode.png)
+
+---
+# Asymmetric Homology Theories
+
+![:img 80%, 10%, 20%](../figs/asymmetric.png)
+
+---
+# Overview
+
+![:img 90%, 5%, 17.5%](../figs/pipeline_1.png)
+
+--
+
+![:img 90%, 5%, 55%](../figs/pipeline_2.png)
+
+---
+# Directed Flag Complexes
+
+![:img 70%, 15%, 25%](../figs/flag_complex.png)
+
+---
+# Directed Flag Complexes
+
+For a directed graph $G = (V, E)$, the directed flag complex of $G$ has $k$-simplices directed $k$-cliques
+
+--
+
+![:img 60%, 20%, 32%](../figs/flag_example_1.png)
+
+--
+
+![:img 60%, 20%, 62%](../figs/flag_example_2.png)
+
+---
+# Flag Persistence Stability
+
+TBA
+
+---
+# Dowker Complexes
+
+Dowker complexes extract topology from binary relations $R \subseteq X \times Y$
+
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_1.jpg)
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_2.jpg)
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_3.jpg)
+
+---
+# Weighted Digraphs
+
+.footnote[Samir Chowdhury and Facundo Memoli. A functorial Dowker theorem and persistent homology of asymmetric networks. 2018. arXiv: 1608.05432 [math.AT]. url: https://arxiv.org/abs/1608.05432.
+]
+
+We define **weighted digraphs** to be pairs $(X, w)$ where
+
+$$w: X \times X \xrightarrow{} \mathbb{R}_{\geq 0} \cup \{\infty\}$$
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_1.png)
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_2.png)
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_3.png)
+
+---
+# Weighted Digraph Persistence
+
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_1.png)
+--
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_2.png)
+--
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_3.png)
+
+---
+# Example (To do: make better graph images)
+
+![:img 40%, 10%, 20%](../figs/dowker1.png)
+
+![:img 40%, 10%, 70%](../figs/dowker1_pers.png)
+
+--
+
+![:img 40%, 50%, 20%](../figs/dowker2.png)
+
+![:img 40%, 50%, 70%](../figs/dowker2_pers.png)
+
+---
+# Interpretation of Dowker Barcodes
+
+.footnote[Samir Chowdhury and Facundo M´emoli. A functorial Dowker theorem and persistent homology of asymmetric networks. 2018. arXiv: 1608.05432 [math.AT]. url: https://arxiv.org/abs/1608.05432.
+]
+
+- Chowdhury and Memoli prove:
+
+Cycle graph with edge weights 1 $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode = $(1,$ $\text{ceil}(\frac{n}{2}))$
+
+- We conjecture (with data):
+
+Cycle graph with any edge weights $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode
+
+$$\underset{i \in V}{\text{max}} \text{ } \omega(i, i+1)$$
+$$\underset{i \ne j}{\text{min}} \text{ max} \text{ } \{\omega(i, j), \text{ }\omega(j, i)\}$$
+
+---
+# Dowker Persistence Stability
+
+TBA
+
+---
+# Proposition 1
+
+TBA
+
+---
+# Proposition 2
+
+TBA
+
+---
+# Proposition 3
+
+TBA
+
+---
+class: center, middle
+
+# Part II
+
+---
+# Digraphs from Phase Space
+
+.pull-left[
+
+![:img 40%, 10%, 20%](../figs/binned_lorenz.png)
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+Point Cloud Bins
+
+Likelihood of moving from bin $x$ to bin $y$
+
+]
+
+.pull-right[
+
+![:img 40%, 50%, 20%](../figs/digraph_lorenz.png)
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+Nodes
+
+Edge Weights
+
+]
+
+---
+# Flag Persistence (Directed vs Undirected Lorenz)
+
+![:img 20%, 20%, 25%](../figs/lorenz_directed.png)
+
+![:img 20%, 60%, 25%](../figs/lorenz_directed_persistence.png)
+
+--
+
+![:img 20%, 20%, 60%](../figs/lorenz_undirected.png)
+
+![:img 20%, 60%, 60%](../figs/lorenz_undirected_persistence.png)
+
+---
+# Flag Persistence (Deterministic Vs. Stochastic)
+
+TBA
+
+---
+# Flag Persistence (Unforced vs forced Lorenz)
+
+TBA
+
+---
+# Dowker (Deterministic Vs. Stochastic)
+
+TBA
+
+---
+# Dowker (Unforced vs forced Lorenz)
+
+![:img 25%, 15%, 20%](../figs/forced_lorenz_1.png)
+
+![:img 25%, 15%, 55%](../figs/dowker_forced_lorenz_1.png)
+
+--
+
+![:img 25%, 60%, 20%](../figs/forced_lorenz_2.png)
+
+![:img 25%, 60%, 55%](../figs/dowker_forced_lorenz_2.png)
+
+---
+# Cycle Representatives
+
+.pull-left[
+
+![:img 40%, 10%, 25%](../figs/cycles_lorenz.png)
+
+]
+
+.pull-right[
+
+![:img 40%, 50%, 25%](../figs/cycles_digraph.png)
+
+]
+
+---
+# Analogous Bars
+
+.footnote[Yoon, H.R., Ghrist, R. & Giusti, C. Persistent extensions and analogous bars: data-induced relations between persistence barcodes. J Appl. and Comput. Topology 7, 571–617 (2023). https://doi.org/10.1007/s41468-023-00115-y
+]
+
+Given point clouds $P \subseteq \mathbb{R}^n$ and $Q \subseteq \mathbb{R}^m$ together with cross-dissimilarity measure $\mu : P \times Q \xrightarrow{} \mathbb{R}_{\geq 0}$, we can identify shared topological features
+
+![:img 80%, 15%, 35%](../figs/analogous_bars_1.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_2.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_3.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_4.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_5.png)
+
+---
+# Shared Features (Lorenz)
+
+![:img 70%, 15%, 20%](../figs/shared_features.png)
+
+---
+# Shared Features
+
+![:img 30%, 5%, 35%](../figs/shared_features_lorenz_1.png)
+--
+![:img 30%, 35%, 35%](../figs/shared_features_lorenz_2.png)
+--
+![:img 30%, 65%, 35%](../figs/shared_features_lorenz_3.png)
+
+---
+# Shared Features (ENSO and PDO)
+
+![:img 70%, 0%, 35%](../figs/enso_pdo_time_series.png)
+
+![:img 30%, 67.5%, 35%](../figs/enso_pdo.png)
+
+---
+# Future Directions (To do: turn this pictorial)
+
+- Investigating effects of changing hyperparameters of the binning technique
+- High-dimensional climate data
+- Exploring recurrent, absorptive and transient classes using markov chains from the digraphs
+
+---
+class: center, middle
+
+# Thank You!

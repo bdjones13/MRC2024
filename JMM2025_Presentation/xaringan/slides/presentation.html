@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Dynamics Aware Filtrations - I and II</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Fangfei Lan, Tobias Timofeyev, Miguel Lopez,   Kristin Kurianski, Benjamin Jones, Sunia Tanweer,   Christopher Potvin, &amp; Enrique Alvarado  " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":".freeze-gif","trigger":"click","overlay":true,"responsive":true,"warnings":true}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"a9ff270b99744e0aaba8e8775ef0019b","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="../../css/msu.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/gallery.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, left, inverse, title-slide
+
+.title[
+# Dynamics Aware Filtrations - I and II
+]
+.subtitle[
+## MRC: Climate Science at the Interface <br> Between TDA and Dynamical Systems
+]
+.author[
+### Fangfei Lan, Tobias Timofeyev, Miguel Lopez, <br> Kristin Kurianski, <strong>Benjamin Jones, Sunia Tanweer</strong>, <br> Christopher Potvin, &amp; Enrique Alvarado<br><br>
+]
+.date[
+### Joint Mathematics Meetings: January 8, 2025
+]
+
+---
+
+
+&lt;!-- ------------------------------------------------------- --&gt;
+&lt;!-- DO NOT REMOVE --&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!-- ------------------------------------------------------- --&gt;
+&lt;!-- Adjust collaborator image size and position (DO NOT INSERT ANY CODE ABOVE THIS)--&gt;
+
+# Team
+
+TBA: picture of all people and funding sources
+
+---
+# Motivation
+
+- Atmospheric flows are characterized by chaotic dynamics and recurring large-scale patterns (weather regimes).
+
+- Sea Level Pressure and Geopotential Height are representative fields for the large-scale atmospheric circulation over the North Atlantic and Europe. 
+
+- There are 4 well-known large-scale weather regimes over the North Atlantic: 
+
+- North Atlantic oscillation (NAO): NAO+, NAO-,  Atlantic Ridge and
+the Scandinavian blocking.
+
+---
+# Motivation
+
+![:img 70%, 15%, 17.5%](../figs/motivation_strommen_et_al.png)
+
+.footnote[Strommen, K., Chantry, M., Dorrington, J. et al. A topological perspective on weather regimes. Clim Dyn 60, 1415–1445 (2023). https://doi.org/10.1007/s00382-022-06395-x]
+
+---
+# Distance-Density Bifiltration
+
+![:img 50%, 5%, 20%](../figs/bifiltration.png)
+
+
+&lt;div class="absolute right-2" style="top: 50%; transform: translateY(-50%);"&gt;
+  &lt;div class="pa3 bg-light-gray br3 shadow-1"&gt;
+  How to encode sequential information?
+  &lt;/div&gt;
+&lt;/div&gt;
+
+.footnote[Strommen, K., Chantry, M., Dorrington, J. et al. A topological perspective on weather regimes. Clim Dyn 60, 1415–1445 (2023). https://doi.org/10.1007/s00382-022-06395-x]
+
+---
+# Dynamics Aware Topology
+
+- Use TDA to study points clouds sampled from dynamical systems.
+
+- Rips complex on a point cloud doesn’t capture the sequential nature of the system.
+
+- Possibility of 1-cycles with trajectories which aren’t closed/periodic. These “pseudo”-loops can give the false impression of periodicity.
+
+---
+# Lorenz Rips Persistence
+
+![:img 25%, 2%, 35%](../figs/lorenz.png)
+
+![:img 70%, 27%, 25%](../figs/rips_lorenz_barcode.png)
+
+---
+# Asymmetric Homology Theories
+
+![:img 80%, 10%, 20%](../figs/asymmetric.png)
+
+---
+# Overview
+
+![:img 90%, 5%, 17.5%](../figs/pipeline_1.png)
+
+--
+
+![:img 90%, 5%, 55%](../figs/pipeline_2.png)
+
+---
+# Directed Flag Complexes
+
+![:img 70%, 15%, 25%](../figs/flag_complex.png)
+
+---
+# Directed Flag Complexes
+
+For a directed graph `\(G = (V, E)\)`, the directed flag complex of `\(G\)` has `\(k\)`-simplices directed `\(k\)`-cliques
+
+--
+
+![:img 60%, 20%, 32%](../figs/flag_example_1.png)
+
+--
+
+![:img 60%, 20%, 62%](../figs/flag_example_2.png)
+
+---
+# Flag Persistence Stability
+
+TBA
+
+---
+# Dowker Complexes
+
+Dowker complexes extract topology from binary relations `\(R \subseteq X \times Y\)`
+
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_1.jpg)
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_2.jpg)
+--
+![:img 80%, 10%, 30%](../figs/dowker_complex_3.jpg)
+
+---
+# Weighted Digraphs
+
+.footnote[Samir Chowdhury and Facundo Memoli. A functorial Dowker theorem and persistent homology of asymmetric networks. 2018. arXiv: 1608.05432 [math.AT]. url: https://arxiv.org/abs/1608.05432.
+]
+
+We define **weighted digraphs** to be pairs `\((X, w)\)` where
+
+`$$w: X \times X \xrightarrow{} \mathbb{R}_{\geq 0} \cup \{\infty\}$$`
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_1.png)
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_2.png)
+--
+![:img 80%, 10%, 45%](../figs/weighted_digraph_3.png)
+
+---
+# Weighted Digraph Persistence
+
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_1.png)
+--
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_2.png)
+--
+![:img 80%, 10%, 30%](../figs/weighted_digraph_persistence_3.png)
+
+---
+# Example (To do: make better graph images)
+
+![:img 40%, 10%, 20%](../figs/dowker1.png)
+
+![:img 40%, 10%, 70%](../figs/dowker1_pers.png)
+
+--
+
+![:img 40%, 50%, 20%](../figs/dowker2.png)
+
+![:img 40%, 50%, 70%](../figs/dowker2_pers.png)
+
+---
+# Interpretation of Dowker Barcodes
+
+.footnote[Samir Chowdhury and Facundo M´emoli. A functorial Dowker theorem and persistent homology of asymmetric networks. 2018. arXiv: 1608.05432 [math.AT]. url: https://arxiv.org/abs/1608.05432.
+]
+
+- Chowdhury and Memoli prove:
+
+Cycle graph with edge weights 1 `\(\xrightarrow{}\)` induced cycle network from shortest path distance `\(\xrightarrow{}\)` dim 1 barcode = `\((1,\)` `\(\text{ceil}(\frac{n}{2}))\)`
+
+- We conjecture (with data):
+
+Cycle graph with any edge weights `\(\xrightarrow{}\)` induced cycle network from shortest path distance `\(\xrightarrow{}\)` dim 1 barcode
+
+`$$\underset{i \in V}{\text{max}} \text{ } \omega(i, i+1)$$`
+`$$\underset{i \ne j}{\text{min}} \text{ max} \text{ } \{\omega(i, j), \text{ }\omega(j, i)\}$$`
+
+---
+# Dowker Persistence Stability
+
+TBA
+
+---
+# Proposition 1
+
+TBA
+
+---
+# Proposition 2
+
+TBA
+
+---
+# Proposition 3
+
+TBA
+
+---
+class: center, middle
+
+# Part II
+
+---
+# Digraphs from Phase Space
+
+.pull-left[
+
+![:img 40%, 10%, 20%](../figs/binned_lorenz.png)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Point Cloud Bins
+
+Likelihood of moving from bin `\(x\)` to bin `\(y\)`
+
+]
+
+.pull-right[
+
+![:img 40%, 50%, 20%](../figs/digraph_lorenz.png)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Nodes
+
+Edge Weights
+
+]
+
+---
+# Flag Persistence (Directed vs Undirected Lorenz)
+
+![:img 20%, 20%, 25%](../figs/lorenz_directed.png)
+
+![:img 20%, 60%, 25%](../figs/lorenz_directed_persistence.png)
+
+--
+
+![:img 20%, 20%, 60%](../figs/lorenz_undirected.png)
+
+![:img 20%, 60%, 60%](../figs/lorenz_undirected_persistence.png)
+
+---
+# Flag Persistence (Deterministic Vs. Stochastic)
+
+TBA
+
+---
+# Flag Persistence (Unforced vs forced Lorenz)
+
+TBA
+
+---
+# Dowker (Deterministic Vs. Stochastic)
+
+TBA
+
+---
+# Dowker (Unforced vs forced Lorenz)
+
+![:img 25%, 15%, 20%](../figs/forced_lorenz_1.png)
+
+![:img 25%, 15%, 55%](../figs/dowker_forced_lorenz_1.png)
+
+--
+
+![:img 25%, 60%, 20%](../figs/forced_lorenz_2.png)
+
+![:img 25%, 60%, 55%](../figs/dowker_forced_lorenz_2.png)
+
+---
+# Cycle Representatives
+
+.pull-left[
+
+![:img 40%, 10%, 25%](../figs/cycles_lorenz.png)
+
+]
+
+.pull-right[
+
+![:img 40%, 50%, 25%](../figs/cycles_digraph.png)
+
+]
+
+---
+# Analogous Bars
+
+.footnote[Yoon, H.R., Ghrist, R. &amp; Giusti, C. Persistent extensions and analogous bars: data-induced relations between persistence barcodes. J Appl. and Comput. Topology 7, 571–617 (2023). https://doi.org/10.1007/s41468-023-00115-y
+]
+
+Given point clouds `\(P \subseteq \mathbb{R}^n\)` and `\(Q \subseteq \mathbb{R}^m\)` together with cross-dissimilarity measure `\(\mu : P \times Q \xrightarrow{} \mathbb{R}_{\geq 0}\)`, we can identify shared topological features
+
+![:img 80%, 15%, 35%](../figs/analogous_bars_1.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_2.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_3.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_4.png)
+--
+![:img 80%, 15%, 35%](../figs/analogous_bars_5.png)
+
+---
+# Shared Features (Lorenz)
+
+![:img 70%, 15%, 20%](../figs/shared_features.png)
+
+---
+# Shared Features
+
+![:img 30%, 5%, 35%](../figs/shared_features_lorenz_1.png)
+--
+![:img 30%, 35%, 35%](../figs/shared_features_lorenz_2.png)
+--
+![:img 30%, 65%, 35%](../figs/shared_features_lorenz_3.png)
+
+---
+# Shared Features (ENSO and PDO)
+
+![:img 70%, 0%, 35%](../figs/enso_pdo_time_series.png)
+
+![:img 30%, 67.5%, 35%](../figs/enso_pdo.png)
+
+---
+# Future Directions (To do: turn this pictorial)
+
+- Investigating effects of changing hyperparameters of the binning technique
+- High-dimensional climate data
+- Exploring recurrent, absorptive and transient classes using markov chains from the digraphs
+
+---
+class: center, middle
+
+# Thank You!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="../../js/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
