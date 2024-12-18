@@ -149,13 +149,6 @@ For a directed graph $G = (V, E)$, the directed flag complex of $G$ has $k$-simp
 ![:img 60%, 20%, 62%](../figs/flag_example_2.png)
 
 ---
-# Flag Persistence Stability
-
-![:img 80%, 10%, 20%](../figs/flag_stability_1.jpg)
---
-![:img 80%, 10%, 20%](../figs/flag_stability_2.jpg)
-
----
 # Dowker Complexes
 
 Dowker complexes extract topology from binary relations $R \subseteq X \times Y$
@@ -286,6 +279,12 @@ Edge Weights
 ![:img 20%, 20%, 60%](../figs/lorenz_undirected.png)
 
 ![:img 20%, 60%, 60%](../figs/lorenz_undirected_persistence.png)
+---
+# Flag Persistence Stability
+
+![:img 80%, 10%, 20%](../figs/flag_stability_1.jpg)
+--
+![:img 80%, 10%, 20%](../figs/flag_stability_2.jpg)
 
 ---
 # Flag Persistence (Deterministic Vs. Stochastic)
