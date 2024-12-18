@@ -213,7 +213,7 @@ $$w: X \times X \xrightarrow{} \mathbb{R}_{\geq 0} \cup \{\infty\}$$
 
 - Chowdhury and Memoli prove:
 
-Cycle graph with edge weights 1 $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode = $(1,$ $\text{ceil}(\frac{n}{2}))$
+Cycle graph with edge weights 1 $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode = $(1,$ $\lceil \frac{n}{2}\rceil)$
 
 - We conjecture (with data):
 
@@ -380,3 +380,5 @@ Given point clouds $P \subseteq \mathbb{R}^n$ and $Q \subseteq \mathbb{R}^m$ tog
 class: center, middle
 
 # Thank You!
+
+This material is based upon work supported by the National Science Foundation under Grant No. 1916439.
