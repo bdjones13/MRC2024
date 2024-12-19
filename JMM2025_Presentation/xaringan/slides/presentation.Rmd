@@ -216,11 +216,6 @@ $$\underset{i \in V}{\text{max}} \text{ } \omega(i, i+1)$$
 $$\underset{i \ne j}{\text{min}} \text{ max} \text{ } \{\omega(i, j), \text{ }\omega(j, i)\}$$
 
 ---
-# Dowker Persistence Stability
-
-TBA
-
----
 # Proposition 1
 
 TBA
@@ -292,7 +287,7 @@ Edge Weights
 ![:img 60%, 20%, 17.5%](../figs/flag_stoch_vs_det.png)
 
 ---
-# Flag Persistence (Unforced vs forced Lorenz)
+# Dowker Persistence Stability
 
 TBA
 
@@ -369,15 +364,11 @@ Given point clouds $P \subseteq \mathbb{R}^n$ and $Q \subseteq \mathbb{R}^m$ tog
 ![:img 30%, 67.5%, 35%](../figs/enso_pdo.png)
 
 ---
-# Future Directions (To do: turn this pictorial)
+# Future Directions
 
-- Investigating effects of changing hyperparameters of the binning technique
-- High-dimensional climate data
-- Exploring recurrent, absorptive and transient classes using markov chains from the digraphs
+![:img 95%, 2.5%, 35%](../figs/future_plan.png)
 
 ---
 class: center, middle
 
 # Thank You!
-
-This material is based upon work supported by the National Science Foundation under Grant No. 1916439.
