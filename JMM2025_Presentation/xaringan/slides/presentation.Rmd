@@ -238,6 +238,8 @@ class: center, middle
 ---
 # Digraphs from Phase Space
 
+.footnote[Myers, A. D., Chumley, M. M., Khasawneh, F. A., & Munch, E. (2023). Persistent homology of coarse-grained state-space networks. Physical Review. E, 107(3). https://doi.org/10.1103/physreve.107.034303]
+
 .pull-left[
 
 ![:img 40%, 10%, 20%](../figs/binned_lorenz.png)
