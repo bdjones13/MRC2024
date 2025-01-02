@@ -14,7 +14,7 @@
     <script src="libs/freezeframe/freezeframe.min.js"></script>
     <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
     <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":".freeze-gif","trigger":"click","overlay":true,"responsive":true,"warnings":true}</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"c87be8aa20464b7daedd5446abec8180","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"fe1bdb355cc14a3099a1f0cec1005ec3","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -212,17 +212,13 @@ We define **weighted digraphs** to be pairs `\((X, w)\)` where
 ---
 # Proposition 1
 
-TBA
+Let `\(G = (V, \omega)\)` be a directed cycle with vertex set `\(V = \{1, \dots, n\}\)` such that `\(\omega(i, j) \geq 0\)` for all `\(i, j \in V\)`, and let `\(\ell = \sum_{i \in V} \omega(i, i+1)\)`. The persistence barcode in dimension 1 of the Dowker filtration has exactly one bar born at
 
----
-# Proposition 2
+`$$\max_{i \in V} \omega(i, i + 1)$$`
+and dies at 
 
-TBA
+`$$\min_{i\neq j}\max\{\omega(i, j), \omega(j, i)\} = \frac{\ell}{2} + \min_{i &lt; j} \left|\frac{\ell}{2} - \omega(i, j)\right|.$$`
 
----
-# Proposition 3
-
-TBA
 
 ---
 class: center, middle
