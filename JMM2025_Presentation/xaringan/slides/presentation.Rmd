@@ -204,16 +204,7 @@ $$w: X \times X \xrightarrow{} \mathbb{R}_{\geq 0} \cup \{\infty\}$$
 .footnote[Samir Chowdhury and Facundo M´emoli. A functorial Dowker theorem and persistent homology of asymmetric networks. 2018. arXiv: 1608.05432 [math.AT]. url: https://arxiv.org/abs/1608.05432.
 ]
 
-- Chowdhury and Memoli prove:
-
-Cycle graph with edge weights 1 $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode = $(1,$ $\lceil \frac{n}{2}\rceil)$
-
-- We conjecture (with data):
-
-Cycle graph with any edge weights $\xrightarrow{}$ induced cycle network from shortest path distance $\xrightarrow{}$ dim 1 barcode
-
-$$\underset{i \in V}{\text{max}} \text{ } \omega(i, i+1)$$
-$$\underset{i \ne j}{\text{min}} \text{ max} \text{ } \{\omega(i, j), \text{ }\omega(j, i)\}$$
+![:img 90%, 5%, 25%](../figs/dowker_weighted.png)
 
 ---
 # Proposition 1
