@@ -222,6 +222,15 @@ class: center, middle
 # Part II
 
 ---
+# Symbolic Dynamics
+
+.footnote[- https://home.cs.colorado.edu/~lizb/rps.html
+- https://www.nature.com/articles/s41598-017-08245-x/figures/6
+- https://journals.aps.org/pre/article/10.1103/PhysRevE.97.052117/figures/1/medium]
+
+![:img 65%, 20%, 17.5%](../figs/symbolic_dynamics.png)
+
+---
 # Digraphs from Phase Space
 
 .footnote[Myers, A. D., Chumley, M. M., Khasawneh, F. A., & Munch, E. (2023). Persistent homology of coarse-grained state-space networks. Physical Review. E, 107(3). https://doi.org/10.1103/physreve.107.034303]
@@ -251,6 +260,22 @@ Edge Weights
 ]
 
 ---
+# Climate Models
+
+- Energy Balance Models
+- General Circulation Models
+- Earth System Models
+- $\color{green}{\text{Lorenz 63}}$
+- Lorenz 96
+- Charney Devore
+- Stochastic Recharge Oscillator (El Nino)
+- CMIP Models
+- Data-Driven Models (e.g. Sindy based)
+- $\color{green}{\text{Observational Data}}$
+
+![:img 40%, 55%, 22.5%](../figs/cmip6.png)
+
+---
 # Flag Persistence (Directed vs Undirected Lorenz)
 
 ![:img 20%, 20%, 25%](../figs/lorenz_directed.png)
@@ -270,22 +295,15 @@ Edge Weights
 ![:img 80%, 10%, 20%](../figs/flag_stability_2.jpg)
 
 ---
-# Flag Persistence (Deterministic Vs. Stochastic)
-
-![:img 60%, 20%, 17.5%](../figs/flag_stoch_vs_det.png)
-
----
 # Dowker Persistence Stability
 
 ![:img 80%, 10%, 20%](../figs/dowker_stability_1.jpg)
 --
 ![:img 80%, 10%, 20%](../figs/dowker_stability_2.png)
-
-
 ---
-# Dowker (Deterministic Vs. Stochastic)
+# Flag Persistence (Deterministic Vs. Stochastic)
 
-TBA
+![:img 60%, 20%, 17.5%](../figs/flag_stoch_vs_det.png)
 
 ---
 # Dowker (Unforced vs forced Lorenz)
@@ -351,9 +369,17 @@ Given point clouds $P \subseteq \mathbb{R}^n$ and $Q \subseteq \mathbb{R}^m$ tog
 # Shared Features (Lorenz)
 
 ![:img 70%, 15%, 20%](../figs/shared_features.png)
+---
+# ENSO and PDO
+
+![:img 60%, 20%, 20%](../figs/enso_pdo_linear.jpg)
+
+.footnote[Kwon, M., Yeh, S.-W., Park, Y.-G. and Lee, Y.-K. (2013), Changes in the linear relationship of ENSO–PDO under the global warming. Int. J. Climatol., 33: 1121-1128. https://doi.org/10.1002/joc.3497]
 
 ---
 # Shared Features (ENSO and PDO)
+
+.footnote[Monthly data, starting in 1950]
 
 ![:img 70%, 0%, 35%](../figs/enso_pdo_time_series.png)
 
